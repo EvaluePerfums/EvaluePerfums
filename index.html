@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumería Portátil - Documentación Oficial</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            max-width: 140px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .card h3 {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Asegúrate de colocar tu imagen como 'logo.png' en la misma carpeta -->
+            <img src="logo.png" alt="Logo Perfumería Portátil" class="logo">
+            <h1>Perfumería Portátil</h1>
+            <p class="subtitle">Documentación oficial del proyecto y visión de marca</p>
+        </header>
+
+        <main>
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <p>Somos un emprendimiento enfocado en hacer que llevar tu fragancia favorita sea algo práctico, accesible y elegante. Nos especializamos en la distribución de atomizadores recargables de bolsillo y decants de perfume de alta calidad.</p>
+                <p>Nuestra misión es eliminar la incomodidad de cargar frascos pesados o costosos, ofreciendo soluciones compactas de 5ml para acompañarte en tu día a día, gimnasio o viajes.</p>
+            </section>
+
+            <section id="como-surgimos">
+                <h2>Cómo Surgimos</h2>
+                <p>El proyecto nació de una necesidad clara: la falta de opciones prácticas y económicas para mantener un aroma fresco durante todo el día sin depender de llevar lociones completas en la maleta.</p>
+                <p>Comenzamos identificando soluciones de empaque compacto y optimizando la distribución local, construyendo un modelo de negocio sostenible basado en practicidad, rotación rápida e inversión eficiente.</p>
+            </section>
+
+            <section id="productos">
+                <h2>Catálogo Base</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Atomizadores Recargables (5ml)</h3>
+                        <p>Envases compactos con tecnología de llenado rápido. Ideales para recargar directamente desde tu frasco original.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Decants de Fragancias</h3>
+                        <p>Muestras de 5ml con aromas masculinos y femeninos listos para usar en cualquier momento.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Perfumería Portátil — Documentación desplegada en GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
